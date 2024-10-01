@@ -1,0 +1,28 @@
+modules = [
+    './main',
+    './plugin',
+    '@rpgjs/default-gui',
+    '@rpgjs/gamepad',
+   # '@rpgjs/mobile-gui'
+   # '@rpgjs/chat',
+   # '@rpgjs/title-screen'
+]
+
+spritesheetDirectories = []
+
+[start]
+    map = 'map'
+    graphic = 'gobot'
+    hitbox = [32, 32]
+
+[titleScreen]
+  mongodb = 'mongodb://localhost:27017/rpg'
+
+[pwa]
+  includeAssets = ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg']
+
+[compilerOptions.build]
+  serverUrl = '$ENV:VITE_SERVER_URL'
+  pwaEnabled = false
+
+
