@@ -1,7 +1,7 @@
 import { RpgEvent, EventData, RpgPlayer, ShapePositioning, RpgShape, Speed, Move, Components } from '@rpgjs/server'
 
 @EventData({
-    name: 'EV-2'
+    name: 'EV-5'
 })
 export default class CatEvent extends RpgEvent {
     playerName = 'Orange';

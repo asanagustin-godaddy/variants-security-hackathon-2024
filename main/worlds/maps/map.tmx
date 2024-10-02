@@ -176,5 +176,8 @@
   <object id="32" name="EV-3" x="600" y="351">
    <point/>
   </object>
+    <object id="32" name="EV-4" x="800" y="351">
+   <point/>
+  </object>
  </objectgroup>
 </map>

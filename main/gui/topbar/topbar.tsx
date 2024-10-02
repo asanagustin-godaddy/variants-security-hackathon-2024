@@ -10,9 +10,9 @@ export default function topbar({ foundImposters }) {
     return (
         <>
             {/* top nav */}
-            <div className="bg-white opacity-80 text-black p-4"> 
+            <div className="bg-white opacity-80 text-black p-4">
                 <div className="flex flex-row justify-between">
-                    <h1 className="font-bold text-xl">Among Us</h1>
+                    <h1 className="font-bold text-xl">Imposter Invasion</h1>
                     <div className="flex flex-row gap-8">
                         <h1 className="font-medium text-lg">Imposters found: {foundImposters}/3</h1>
                         <button onClick={()=>setShowModal(true)} className="bg-black text-white rounded px-2 py-1">Open Map</button>
@@ -21,16 +21,16 @@ export default function topbar({ foundImposters }) {
             </div>
 
             {/* center dialog */}
-            {showModal && 
+            {showModal &&
                 <div className="fixed inset-0 flex items-center justify-center z-50">
-                <div className="bg-white opacity-80 text-black p-4 rounded-lg"> 
+                <div className="bg-white opacity-80 text-black p-4 rounded-lg">
                     <div className="flex flex-col gap-5 max-w-96 justify-between">
                         <h1>This is like the map!</h1>
                         <button onClick={()=>setShowModal(false)} className="bg-black text-white rounded px-2 py-1">Close</button>
                     </div>
                 </div>
             </div>}
-        
+
         </>
     )
 }
