@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="56">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="93">
  <tileset firstgid="1" source="base-32.tsx"/>
  <tileset firstgid="1001" source="walls-32.tsx"/>
  <tileset firstgid="1113" source="objects-32.tsx"/>
+ <tileset firstgid="1513" source="Furnitures-32.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="20">
   <data encoding="csv">
 292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,
@@ -85,9 +86,8 @@
   <object id="14" gid="850" x="287.571" y="218.143" width="32" height="32"/>
   <object id="15" gid="850" x="321.143" y="218.143" width="32" height="32"/>
   <object id="16" gid="851" x="354" y="218.143" width="32" height="32"/>
-  <object id="49" gid="1512" x="309.714" y="423.143" width="32" height="32"/>
-  <object id="50" gid="944" x="576.203" y="71.2284" width="32" height="32"/>
-  <object id="51" gid="944" x="29.3253" y="66.9853" width="32" height="32"/>
+  <object id="50" gid="944" x="448.938" y="84.864" width="32" height="32"/>
+  <object id="51" gid="944" x="164.545" y="81.7572" width="32" height="32"/>
   <object id="52" name="EV-0" x="290.406" y="420.052">
    <point/>
   </object>
@@ -97,5 +97,23 @@
   <object id="54" name="Start Position" type="start" x="129.646" y="305.964">
    <point/>
   </object>
+  <object id="66" gid="1738" x="39.6787" y="81.9053" width="32" height="32"/>
+  <object id="88" gid="1738" x="512.131" y="80.478" width="32" height="32"/>
+  <object id="67" gid="1739" x="70.9269" y="82.4735" width="32" height="32"/>
+  <object id="86" gid="1739" x="544.069" y="80.5289" width="32" height="32"/>
+  <object id="68" gid="1740" x="103.88" y="82.4735" width="32" height="32"/>
+  <object id="85" gid="1740" x="575.815" y="80.7013" width="32" height="32"/>
+  <object id="69" gid="1741" x="136.264" y="83.0416" width="32" height="32"/>
+  <object id="84" gid="1741" x="607.854" y="80.5799" width="32" height="32"/>
+  <object id="70" gid="1712" x="70.9269" y="50.6571" width="32" height="32"/>
+  <object id="91" gid="1712" x="543.379" y="49.2298" width="32" height="32"/>
+  <object id="71" gid="1711" x="40.2468" y="50.6571" width="32" height="32"/>
+  <object id="90" gid="1711" x="512.699" y="49.2298" width="32" height="32"/>
+  <object id="72" gid="1710" x="7.29413" y="50.6571" width="32" height="32"/>
+  <object id="89" gid="1710" x="480.953" y="49.0574" width="32" height="32"/>
+  <object id="73" gid="1737" x="7.29413" y="81.9053" width="32" height="32"/>
+  <object id="87" gid="1737" x="479.746" y="80.478" width="32" height="32"/>
+  <object id="74" gid="1713" x="103.311" y="50.089" width="32" height="32"/>
+  <object id="92" gid="1713" x="575.936" y="49.1788" width="32" height="32"/>
  </objectgroup>
 </map>
