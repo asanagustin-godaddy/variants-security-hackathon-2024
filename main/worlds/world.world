@@ -3,9 +3,16 @@
         {
             "fileName": "maps/map.tmx",
             "height": 640,
+            "width": 960,
+            "x": 768,
+            "y": -640
+        },
+        {
+            "fileName": "maps/lobby.tmx",
+            "height": 640,
             "width": 640,
-            "x": 288,
-            "y": 64
+            "x": 928,
+            "y": 0
         }
     ],
     "onlyShowAdjacentMaps": false,
