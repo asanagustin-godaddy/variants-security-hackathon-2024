@@ -14,7 +14,7 @@ export default class CatEvent extends RpgEvent {
     }
 
     async onAction(player: RpgPlayer) {
-        await player.showText('Hi, I am an intern that just started in Cart team this summer.')
+        await player.showText('I am an intern that just started in Cart team this summer.')
         await player.showText('Could you review my code for any vulnerabilities?')
         const gui = player.gui('code')
         await gui.open({},

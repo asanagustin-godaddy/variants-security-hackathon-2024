@@ -9,6 +9,8 @@ export default class CatEvent extends RpgEvent {
         this.setComponentsTop(
             Components.text('Mike')
         )
+        this.infiniteMoveRoute([ Move.tileRandom() ])
+        this.speed = Speed.Slowest
     }
 
     async onAction(player: RpgPlayer) {
@@ -19,14 +21,22 @@ export default class CatEvent extends RpgEvent {
        ], {talkWith: this})
        if(choice?.value === 'yes') {
             const gui = player.gui('result')
-            gui.open({ title: 'Boo!', info: 'You cannot let people scan in like that' })
+            await gui.open( {title: 'Boo!', info: 'You cannot let people scan in like that', isBad: true},
+            {
+                waitingAction: true,
+                blockPlayerInput: true
+            });
        } else {
-           player.gold += 1;
-           player.showText('Oh, okay. *mumbles* Guess I will try to find another way in.')
            const gui = player.gui('result')
-           gui.open({ title: 'Yayy!', info: 'Smart Move!' })
+           await gui.open( { title: 'Yayy!', info: 'Smart Move!' },
+           {
+               waitingAction: true,
+               blockPlayerInput: true
+           });
+           player.gold += 1;
+           this.remove();
        }
-        this.remove();
+
 
     }
 }

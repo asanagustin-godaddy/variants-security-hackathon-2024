@@ -19,7 +19,7 @@ export default class CatEvent extends RpgEvent {
        ], {talkWith: this})
        if(choice?.value === 'yes') {
             const gui = player.gui('result')
-            gui.open({ title: 'Boo!', info: 'You cannot let people in like that' })
+            gui.open({ title: 'Boo!', info: 'You cannot let people in like that', isBad: true })
        } else {
            player.gold += 1;
            await player.showText('Oh, really? I am sorry, I will come back later with authorization.')

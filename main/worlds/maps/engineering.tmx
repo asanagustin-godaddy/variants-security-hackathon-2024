@@ -137,7 +137,13 @@
   <object id="201" name="EV-5" x="327.061" y="74.9813">
    <point/>
   </object>
+    <object id="202" name="TASK-0" x="290" y="35">
+   <point/>
+  </object>
   <object id="202" name="TASK-1" x="63" y="293">
+   <point/>
+  </object>
+    <object id="202" name="TASK-1B" x="40" y="343">
    <point/>
   </object>
   <object id="204" name="TASK-2" x="788" y="365">

@@ -12,7 +12,7 @@ export default class CatEvent extends RpgEvent {
     }
 
     async onAction(player: RpgPlayer) {
-            await player.showText('Here is my badge', {talkWith: this})
+            await player.showText('Here is my badge...', {talkWith: this})
             const gui = player.gui('badge')
             gui.open({ name: 'WindOps', img: 'public/images/blue.png', role: 'Software Engineer', tasksCompleted: 100, serverAccess: 'Yes'})
     }
