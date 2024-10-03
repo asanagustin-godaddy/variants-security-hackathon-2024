@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="237">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="239">
  <tileset firstgid="1" source="base-32.tsx"/>
  <tileset firstgid="1001" source="walls-32.tsx"/>
  <tileset firstgid="1113" source="objects-32.tsx"/>
@@ -190,11 +190,10 @@
   <object id="46" gid="984" x="314.852" y="120.323" width="32" height="32"/>
   <object id="47" gid="981" x="352.87" y="121.084" width="32" height="32"/>
   <object id="57" gid="973" x="460.842" y="120.323" width="32" height="32"/>
-  <object id="58" gid="975" x="514.314" y="227.597" width="32" height="32" rotation="359.425"/>
-  <object id="59" gid="976" x="509.935" y="245.891" width="32" height="32" rotation="359.425"/>
-  <object id="60" gid="976" x="528.191" y="246.468" width="32" height="32" rotation="359.425"/>
-  <object id="61" gid="974" x="545.678" y="246.292" width="32" height="32" rotation="359.425"/>
-  <object id="67" gid="975" x="541.678" y="226.562" width="32" height="32" rotation="359.425"/>
+  <object id="58" gid="975" x="513.132" y="226.415" width="32" height="32" rotation="359.425"/>
+  <object id="60" gid="976" x="512.826" y="244.104" width="32" height="32" rotation="359.425"/>
+  <object id="61" gid="974" x="540.951" y="241.565" width="32" height="32" rotation="359.425"/>
+  <object id="67" gid="975" x="542.86" y="225.38" width="32" height="32" rotation="359.425"/>
   <object id="160" gid="969" x="232.563" y="430.789" width="32" height="32"/>
   <object id="180" gid="969" x="456.171" y="433.1" width="32" height="32"/>
   <object id="161" gid="969" x="284.606" y="432.343" width="32" height="32"/>
@@ -216,5 +215,11 @@
   <object id="232" gid="967" x="443.251" y="644.078" width="32" height="32"/>
   <object id="233" gid="968" x="510.219" y="643.397" width="32" height="32"/>
   <object id="236" gid="1881" x="57.362" y="338.161" width="32" height="32" rotation="274.236"/>
+  <object id="237" name="TASK-3" x="180.83" y="850.963">
+   <point/>
+  </object>
+  <object id="238" x="336.907" y="28.3987" width="113.327" height="28.2989">
+   <text wrap="1">Cafeteria</text>
+  </object>
  </objectgroup>
 </map>

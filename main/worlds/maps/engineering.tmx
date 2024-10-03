@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="209">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="211">
  <tileset firstgid="1" source="objects-32.tsx"/>
  <tileset firstgid="67" source="base-32.tsx"/>
  <tileset firstgid="1067" source="walls-32.tsx"/>
@@ -143,7 +143,7 @@
   <object id="204" name="TASK-2" x="796.23" y="369.193">
    <point/>
   </object>
-  <object id="205" name="TASK-3" x="526.654" y="188.167">
+  <object id="209" name="TASK-3" x="978.361" y="1517.26">
    <point/>
   </object>
  </objectgroup>
@@ -228,7 +228,5 @@
    <point/>
   </object>
   <object id="206" gid="1179" x="493.644" y="596.619" width="32" height="32" rotation="178.326"/>
-  <object id="207" gid="1179" x="298.951" y="233.178" width="32" height="32" rotation="274.236"/>
-  <object id="208" gid="1179" x="651.847" y="196.497" width="32" height="32" rotation="88.6441"/>
  </objectgroup>
 </map>
