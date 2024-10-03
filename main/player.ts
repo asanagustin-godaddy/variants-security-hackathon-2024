@@ -26,7 +26,7 @@ const player: RpgPlayerHooks = {
         }
     },
     async onJoinMap(player: RpgPlayer) {
-        player.gui('topbar').open({ foundImposters: 0 });
+        player.gui('topbar').open();
 
         setTimeout(() => {
             player.addItem(Potion, 1);

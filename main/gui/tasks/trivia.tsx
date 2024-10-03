@@ -2,6 +2,8 @@ import { RpgReactContext, useEventPropagator } from '@rpgjs/client/react'
 import { useContext, useState } from 'react'
 
 export default function trivia() {
+    const { rpgGuiClose } = useContext(RpgReactContext)
+
     const [showModal, setShowModal] = useState(true);
     const [answer, setAnswer] = useState('');
 
@@ -23,7 +25,7 @@ export default function trivia() {
                         {/* TODO: add state to answer feedback */}
                         <div className="text-red-700">Oops! Try again.</div>
                         <div className="text-green-700">Correct! This is because...</div>
-                        <button onClick={() => setShowModal(false)} className="bg-gray-600 text-white rounded p-2">Close</button>
+                        <button onClick={() => rpgGuiClose('trivia')} className="bg-gray-600 text-white rounded p-2">Close</button>
                     </div>
                 </div>
             </div>

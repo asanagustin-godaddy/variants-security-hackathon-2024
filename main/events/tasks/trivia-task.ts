@@ -19,6 +19,12 @@ export default class CatEvent extends RpgEvent {
         await player.showText('In this task, you will have to answer a few questions from Tech Talk #2 (Top 10 OWASP Attacks).')
         await player.showText('Good luck!')
         const gui = player.gui('trivia')
-        gui.open()
+        await gui.open({},
+        {
+            waitingAction: true,
+            blockPlayerInput: true
+        });
+        await player.showText('Nice work! You completed a task!');
+        player.exp += 1;
     }
 }

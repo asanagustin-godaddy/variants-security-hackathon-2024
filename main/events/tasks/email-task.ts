@@ -14,11 +14,16 @@ export default class CatEvent extends RpgEvent {
     }
 
     async onAction(player: RpgPlayer) {
-        await player.showText('Hey there! Phishing is a type of cyberattack where people are tricked...')
-        await player.showText('into sharing sensitive info or downloading malware through sneaky emails.')
-        await player.showText('In this task, you will get a few emails to evaluate.')
-        await player.showText('And remember: if you ever have doubt on the authenticity of an email, you can send it over to isitbad@godaddy.com.')
+        await player.showText('Hey there! Phishing is a type of cyberattack where people are tricked into sharing sensitive info or downloading malware through sneaky emails.')
+        await player.showText('In this task, you will get a few emails to evaluate for phishing.')
+        await player.showText('And remember - if you ever have doubt on the authenticity of an email, you can send it over to isitbad@godaddy.com.')
         const gui = player.gui('email')
-        gui.open()
+        await gui.open({},
+        {
+            waitingAction: true,
+            blockPlayerInput: true
+        });
+        await player.showText('Nice work! You completed a task!');
+        player.exp += 1;
     }
 }
