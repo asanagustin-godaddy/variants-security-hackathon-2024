@@ -39,6 +39,12 @@ export default function topbar() {
                 </button>
             </div>
 
+            {/* bottom element */}
+            <div className="fixed bottom-0 right-0 p-2 m-4">
+                <h1 className="text-red-500 font-medium text-lg">Imposters found: {foundImposter}/3</h1>
+                 <h1 className="text-blue-500 font-medium text-lg">Tasks completed: {completedTask}/3</h1>
+            </div>
+
             {/* center dialog */}
             {showModal &&
                 <div className="fixed inset-0 flex items-center justify-center z-50">
