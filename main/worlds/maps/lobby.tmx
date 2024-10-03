@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="99">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="102">
  <tileset firstgid="1" source="base-32.tsx"/>
  <tileset firstgid="1001" source="walls-32.tsx"/>
  <tileset firstgid="1113" source="objects-32.tsx"/>
@@ -80,6 +80,9 @@
   <object id="25" gid="920" x="180.562" y="221.464" width="32" height="32"/>
   <object id="26" gid="912" x="180.562" y="187.179" width="32" height="32"/>
   <object id="94" gid="1913" x="-145.549" y="1032.01" width="32" height="32"/>
+  <object id="101" name="EV-2" x="377.913" y="186.234">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="Object Layer 2">
   <object id="11" gid="849" x="243.419" y="215.036" width="32" height="32"/>
@@ -89,10 +92,10 @@
   <object id="16" gid="851" x="370.312" y="215.036" width="32" height="32"/>
   <object id="50" gid="944" x="448.938" y="84.864" width="32" height="32"/>
   <object id="51" gid="944" x="164.545" y="81.7572" width="32" height="32"/>
-  <object id="52" name="EV-0" x="290.406" y="420.052">
+  <object id="52" name="EV-0" x="289.674" y="373.576">
    <point/>
   </object>
-  <object id="54" name="Start Position" type="start" x="129.646" y="305.964">
+  <object id="54" name="Start Position" type="start" x="356.902" y="395.256">
    <point/>
   </object>
   <object id="66" gid="1738" x="39.6787" y="81.9053" width="32" height="32"/>
