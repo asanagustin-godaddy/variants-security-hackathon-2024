@@ -13,6 +13,13 @@
             "width": 640,
             "x": 928,
             "y": 0
+        },
+        {
+            "fileName": "maps/callCenter.tmx",
+            "height": 1280,
+            "width": 640,
+            "x": 288,
+            "y": 0
         }
     ],
     "onlyShowAdjacentMaps": false,
