@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="206">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="209">
  <tileset firstgid="1" source="objects-32.tsx"/>
  <tileset firstgid="67" source="base-32.tsx"/>
  <tileset firstgid="1067" source="walls-32.tsx"/>
+ <tileset firstgid="1179" source="gd-arrow.tsx"/>
  <layer id="1" name="Floor" width="30" height="20" opacity="0.84">
   <data encoding="csv">
 35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,
@@ -223,8 +224,11 @@
   <object id="26" gid="25" x="884.31" y="329.495" width="32" height="32"/>
   <object id="32" gid="25" x="886.582" y="413.561" width="32" height="32"/>
   <object id="50" gid="25" x="878.251" y="565.03" width="32" height="32"/>
-  <object id="11" name="Start Position" type="start" x="484.361" y="619.496">
+  <object id="11" name="Start Position" type="start" x="545.074" y="567.637">
    <point/>
   </object>
+  <object id="206" gid="1179" x="493.644" y="596.619" width="32" height="32" rotation="178.326"/>
+  <object id="207" gid="1179" x="298.951" y="233.178" width="32" height="32" rotation="274.236"/>
+  <object id="208" gid="1179" x="651.847" y="196.497" width="32" height="32" rotation="88.6441"/>
  </objectgroup>
 </map>

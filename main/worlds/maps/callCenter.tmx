@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="329">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="331">
  <tileset firstgid="1" source="base-32.tsx"/>
  <tileset firstgid="1001" source="objects-32.tsx"/>
  <tileset firstgid="1067" source="walls-32.tsx"/>
  <tileset firstgid="1179" source="Furnitures-32.tsx"/>
  <tileset firstgid="1881" source="phone-teal.tsx"/>
+ <tileset firstgid="1882" source="gd-arrow.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="40">
   <data encoding="csv">
 1035,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
@@ -302,16 +303,18 @@
   <object id="314" gid="1544" x="539.895" y="1022.99" width="32" height="32"/>
   <object id="13" gid="1545" x="219.652" y="97.0627" width="32" height="32"/>
   <object id="317" gid="1545" x="567.489" y="1022.94" width="32" height="32"/>
-  <object id="299" gid="1881" x="111.64" y="584.549" width="32" height="32" rotation="274.399"/>
+  <object id="299" gid="1881" x="109.11" y="582.02" width="32" height="32" rotation="274.399"/>
   <object id="301" gid="1881" x="107.876" y="438.708" width="32" height="32" rotation="274.399"/>
-  <object id="302" gid="1881" x="230.194" y="447.176" width="32" height="32" rotation="274.399"/>
-  <object id="303" gid="1881" x="230.194" y="581.726" width="32" height="32" rotation="274.399"/>
-  <object id="304" gid="1881" x="229.253" y="720.04" width="32" height="32" rotation="274.399"/>
+  <object id="302" gid="1881" x="226.4" y="439.587" width="32" height="32" rotation="274.399"/>
+  <object id="303" gid="1881" x="230.194" y="579.197" width="32" height="32" rotation="274.399"/>
+  <object id="304" gid="1881" x="229.253" y="714.981" width="32" height="32" rotation="274.399"/>
   <object id="305" gid="1881" x="111.64" y="719.099" width="32" height="32" rotation="274.399"/>
-  <object id="306" gid="1881" x="108.817" y="859.295" width="32" height="32" rotation="274.399"/>
-  <object id="307" gid="1881" x="227.372" y="862.118" width="32" height="32" rotation="274.399"/>
+  <object id="306" gid="1881" x="110.082" y="856.765" width="32" height="32" rotation="274.399"/>
+  <object id="307" gid="1881" x="229.901" y="855.794" width="32" height="32" rotation="274.399"/>
   <object id="308" x="35.7816" y="642.763" width="80.2344" height="18.8438" rotation="272.646">
    <text wrap="1">Care Team</text>
   </object>
+  <object id="329" gid="1882" x="578.485" y="300.216" width="32" height="32" rotation="88.6441"/>
+  <object id="330" gid="1882" x="392" y="634.657" width="32" height="32" rotation="178.198"/>
  </objectgroup>
 </map>

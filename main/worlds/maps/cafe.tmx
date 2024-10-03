@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="236">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="237">
  <tileset firstgid="1" source="base-32.tsx"/>
  <tileset firstgid="1001" source="walls-32.tsx"/>
  <tileset firstgid="1113" source="objects-32.tsx"/>
  <tileset firstgid="1179" source="Furnitures-32.tsx"/>
+ <tileset firstgid="1881" source="gd-arrow.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="30">
   <data encoding="csv">
 847,847,847,847,847,847,847,847,847,847,847,847,847,847,847,847,847,847,847,847,
@@ -214,5 +215,6 @@
   <object id="231" gid="966" x="507.447" y="612.905" width="32" height="32"/>
   <object id="232" gid="967" x="443.251" y="644.078" width="32" height="32"/>
   <object id="233" gid="968" x="510.219" y="643.397" width="32" height="32"/>
+  <object id="236" gid="1881" x="57.362" y="338.161" width="32" height="32" rotation="274.236"/>
  </objectgroup>
 </map>
