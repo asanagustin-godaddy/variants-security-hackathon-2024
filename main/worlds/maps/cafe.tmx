@@ -210,9 +210,9 @@
   <object id="225" gid="962" x="283.838" y="610.133" width="32" height="32"/>
   <object id="228" gid="963" x="223.778" y="642.473" width="32" height="32"/>
   <object id="229" gid="963" x="286.148" y="640.625" width="32" height="32"/>
-  <object id="230" gid="965" x="447.386" y="616.139" width="32" height="32"/>
+  <object id="230" gid="965" x="446.122" y="613.609" width="32" height="32"/>
   <object id="231" gid="966" x="507.447" y="612.905" width="32" height="32"/>
-  <object id="232" gid="967" x="448.31" y="641.549" width="32" height="32"/>
+  <object id="232" gid="967" x="443.251" y="644.078" width="32" height="32"/>
   <object id="233" gid="968" x="510.219" y="643.397" width="32" height="32"/>
  </objectgroup>
 </map>

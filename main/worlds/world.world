@@ -1,14 +1,14 @@
 {
     "maps": [
         {
-            "fileName": "maps/map.tmx",
+            "fileName": "maps/engineering.tmx",
             "height": 640,
             "width": 960,
             "x": 768,
             "y": -640
         },
         {
-            "fileName": "maps/lobby.tmx",
+            "fileName": "maps/map.tmx",
             "height": 640,
             "width": 640,
             "x": 928,
