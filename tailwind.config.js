@@ -5,8 +5,11 @@ export default {
     "./{!(dist|node_modules)/**/*,*}.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'default': ['"Press Start 2P"', 'monospace']
+      },
+    },
   },
   plugins: [],
 }
-

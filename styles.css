@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body,
 html {
     height: 100%;
@@ -14,6 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Press Start 2P', monospace;
 }
 
 #rpg {
