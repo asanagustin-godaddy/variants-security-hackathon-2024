@@ -1,43 +1,85 @@
-import { RpgReactContext, useEventPropagator } from '@rpgjs/client/react'
-import { useContext, useState } from 'react'
+import { useState, useContext } from 'react'
+import { RpgReactContext } from '@rpgjs/client/react'
+
+interface Question {
+    question: string;
+    image: string;
+    options: string[];
+    correctAnswer: number;
+    wrongExplanation: string;
+    correctExplanation: string;
+}
+
+// should probably be moved as input?
+const questions: Question[] = [
+    {
+        question: 'Spot the vulnerability in the code below.',
+        image: 'public/images/code1.png',
+        options: ['Line 1', 'Line 2', 'Line 3', 'Line 4'],
+        correctAnswer: 1,
+        wrongExplanation: 'Try again!',
+        correctExplanation: 'Correct! The vulnerability is in Line 2, as it is comparing the user input directly to a hardcoded password.'
+    }
+];
 
 export default function code() {
+    const { rpgGuiClose } = useContext(RpgReactContext)
+
+    const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showModal, setShowModal] = useState(true);
-    const [answer, setAnswer] = useState('');
-    
+    const [showExplanation, setShowExplanation] = useState(false);
+    const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
+    const [completed, setCompleted] = useState(false);
+
+    const handleAnswer = (answer: number) => {
+        if (answer === questions[currentQuestion].correctAnswer) {
+            setIsAnswerCorrect(true);
+            if (currentQuestion === questions.length - 1) {
+                console.log('completed');
+                setCompleted(true);
+            }
+        } else {
+            setIsAnswerCorrect(false);
+        }
+        setShowExplanation(true);
+    }
+
+    const handleNext = () => {
+        setCurrentQuestion(currentQuestion + 1);
+        setShowExplanation(false);
+        setIsAnswerCorrect(false);
+    }
+
     if (!showModal) return null;
 
     return (
         <>
-            <div className="fixed inset-0 flex items-center justify-center z-50">
-                <div className="bg-white opacity-100 text-black p-4 rounded-lg"> 
-                    <div className="flex flex-col gap-5 max-w-96 justify-between">
-                        <h1 className="font-bold">Spot the vulnerability:</h1>
-                        {/* hard coded question (for now..?)*/}
-                        {/* Question */}
-                        <div className="bg-black p-4 text-white">
-                            <p>1. user_input = input("Enter your password: ")</p>
-                            <p>2. if user_input == "password123":</p>
-                            <p>3.     print("Access granted!")</p>
-                            <p>4. else:</p>
-                            <p>5.     print("Access denied!")</p>
-                        </div>
-                        {/* <img src="[ADD VULNERABLE CODE HERE]" alt="some code" /> */}
-                        {/* Answers */}
-                        <div className="flex flex-col gap-2">
-                            <button className="bg-blue-500 text-white p-2 w-full rounded">Line 1</button>
-                            <button className="bg-blue-500 text-white p-2 w-full rounded">Line 2</button>
-                            <button className="bg-blue-500 text-white p-2 w-full rounded">Line 3</button>
-                            <button className="bg-blue-500 text-white p-2 w-full rounded">Line 4</button>
-                        </div>
-                        {/* TODO: add state to answer feedback */}
-                        <div className="text-red-700">Oops! Try again.</div>
-                        <div className="text-green-700">Correct! The vulnerability is in Line 2, as it is comparing the user input directly to a hardcoded password.</div>
-                        <button onClick={()=>setShowModal(false)} className="bg-gray-600 text-white rounded p-2">Close</button>
+        {completed &&
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="flex flex-col gap-8 bg-white opacity-100 text-black p-8 rounded-lg"> 
+                <div className="text-black">Great work, you've completed a task!</div>
+                <button onClick={()=>setShowModal(false)} className="bg-gray-600 text-white rounded p-2 w-full">Close</button>
+            </div>
+        </div>
+        }
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+                <div className="bg-white opacity-100 text-black p-6 rounded-lg"> 
+                    <div className="flex flex-col gap-2 max-w-lg max-h-3xl justify-between">
+                        <h1>{questions[currentQuestion].question}</h1>
+                        <img src={questions[currentQuestion].image} alt="Question image" />
+                        {/* make dynamic in future vv */}
+                        {showExplanation && <div className={isAnswerCorrect ? "text-green-700" : "text-red-700"}>{isAnswerCorrect ? questions[currentQuestion].correctExplanation : questions[currentQuestion].wrongExplanation}</div>}
+                        {!isAnswerCorrect && <div className="flex flex-col gap-2">
+                            {questions[currentQuestion].options.map((option, index) => (
+                                <button disabled={isAnswerCorrect} key={index} onClick={() => handleAnswer(index)} className="disabled:bg-gray-400 bg-teal-500 hover:opacity-90 text-white p-2 w-full rounded">{option}</button>
+                            ))}
+                        </div>}
+                        {isAnswerCorrect && !completed && <button disabled={!isAnswerCorrect} onClick={handleNext} className="disabled:bg-gray-400 bg-gray-600 text-white p-2 w-full rounded ">Next</button>}
+                        {completed && <button disabled={!isAnswerCorrect} onClick={() => rpgGuiClose('code')} className="disabled:bg-gray-400 bg-gray-600 text-white p-2 w-full rounded ">Close</button>}
                     </div>
                 </div>
             </div>
-        
         </>
+        
     )
 }

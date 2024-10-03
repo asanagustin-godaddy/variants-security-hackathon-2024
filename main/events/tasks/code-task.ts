@@ -17,7 +17,12 @@ export default class CatEvent extends RpgEvent {
         await player.showText('Hi, I am an intern that just started in Cart team this summer.')
         await player.showText('Could you review my code for any vulnerabilities?')
         const gui = player.gui('code')
-        gui.open()
+        await gui.open({},
+            {
+                waitingAction: true,
+                blockPlayerInput: true
+            });
+        await player.showText('Nice work! You completed a task!');
         player.exp += 1;
         this.remove();
     }
