@@ -49,7 +49,7 @@
 1037,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1034,
 1037,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1034,
 1037,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1034,
-1106,1003,1003,1003,1003,1003,1003,1003,0,0,0,0,1003,1003,1003,1003,1003,1003,1003,1107
+1106,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1003,1107
 </data>
  </layer>
  <objectgroup id="3" name="Object Layer 1">
@@ -79,7 +79,6 @@
   <object id="24" gid="920" x="434.133" y="220.75" width="32" height="32"/>
   <object id="25" gid="920" x="180.562" y="221.464" width="32" height="32"/>
   <object id="26" gid="912" x="180.562" y="187.179" width="32" height="32"/>
-  <object id="94" gid="1913" x="-145.549" y="1032.01" width="32" height="32"/>
   <object id="101" name="EV-2" x="377.913" y="186.234">
    <point/>
   </object>
@@ -102,19 +101,19 @@
   <object id="88" gid="1738" x="512.131" y="80.478" width="32" height="32"/>
   <object id="67" gid="1739" x="70.9269" y="82.4735" width="32" height="32"/>
   <object id="86" gid="1739" x="544.069" y="80.5289" width="32" height="32"/>
-  <object id="68" gid="1740" x="103.88" y="82.4735" width="32" height="32"/>
+  <object id="68" gid="1740" x="102.488" y="82.4735" width="32" height="32"/>
   <object id="85" gid="1740" x="575.815" y="80.7013" width="32" height="32"/>
-  <object id="69" gid="1741" x="136.264" y="83.0416" width="32" height="32"/>
+  <object id="69" gid="1741" x="134.409" y="83.0416" width="32" height="32"/>
   <object id="84" gid="1741" x="607.854" y="80.5799" width="32" height="32"/>
   <object id="70" gid="1712" x="70.9269" y="50.6571" width="32" height="32"/>
   <object id="91" gid="1712" x="543.379" y="49.2298" width="32" height="32"/>
-  <object id="71" gid="1711" x="40.2468" y="50.6571" width="32" height="32"/>
+  <object id="71" gid="1711" x="38.8551" y="50.6571" width="32" height="32"/>
   <object id="90" gid="1711" x="512.699" y="49.2298" width="32" height="32"/>
-  <object id="72" gid="1710" x="7.29413" y="50.6571" width="32" height="32"/>
+  <object id="72" gid="1710" x="7.75802" y="51.121" width="32" height="32"/>
   <object id="89" gid="1710" x="480.953" y="49.0574" width="32" height="32"/>
-  <object id="73" gid="1737" x="7.29413" y="81.9053" width="32" height="32"/>
+  <object id="73" gid="1737" x="7.75802" y="81.9053" width="32" height="32"/>
   <object id="87" gid="1737" x="479.746" y="80.478" width="32" height="32"/>
-  <object id="74" gid="1713" x="103.311" y="50.089" width="32" height="32"/>
+  <object id="74" gid="1713" x="102.848" y="51.0167" width="32" height="32"/>
   <object id="92" gid="1713" x="575.936" y="49.1788" width="32" height="32"/>
  </objectgroup>
 </map>
