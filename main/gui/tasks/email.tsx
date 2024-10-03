@@ -13,7 +13,7 @@ export default function email() {
                 <div className="bg-white opacity-100 text-black p-4 rounded-lg"> 
                     <div className="flex flex-col gap-5 max-w-96 justify-between">
                         <h1>Is this a valid email?</h1>
-                        <img src="https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/phishing-attack-email-example.png" alt="Phishing email" />
+                        <img src="public/images/email-1.png" alt="Phishing email" />
                         <div className="flex flex-row gap-2">
                             <button className="bg-green-500 text-white p-2 w-full rounded">Yes</button>
                             <button className="bg-red-500 text-white p-2 w-full rounded">No</button>
