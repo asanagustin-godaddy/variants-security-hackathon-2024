@@ -1,7 +1,7 @@
 import { RpgEvent, EventData, RpgPlayer, Components } from '@rpgjs/server'
 
 @EventData({
-    name: 'EV-4'
+    name: 'EV-5'
 })
 export default class CatEvent extends RpgEvent {
     onInit() {
@@ -12,19 +12,10 @@ export default class CatEvent extends RpgEvent {
     }
 
     async onAction(player: RpgPlayer) {
-        const gui = player.gui('input')
-        gui.open({ title: 'Yayy!', info: 'Smart Move!' })
-    //     const choice = await player.showChoices('What looks odd?', [
-    //         { text: 'For Sure thing!', value: 'yes' },
-    //         { text: 'Sorry, you cant enter without authorization.', value: 'no' },
-    //    ], {talkWith: this})
-    //    if(choice?.value === 'yes') {
-    //         const gui = player.gui('result')
-    //         gui.open({ title: 'Boo!', info: 'You cannot let people scan in like that' })
-    //    }else{
-    //        await player.showText('Oh, okay. *mumbles* Guess I will try to find another way in.')
-    //        const gui = player.gui('result')
-    //        gui.open({ title: 'Yayy!', info: 'Smart Move!' })
-    //    }
+        await player.showText('Oh Laptop, and its unlocked!!', { talkWith: this })
+        player.gold += 1
+        const gui = player.gui('result')
+        gui.open({ title: 'Boo!', info: 'Never leave you laptop unlocked and have a strong password!' })
+        this.remove();
     }
 }

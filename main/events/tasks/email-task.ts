@@ -25,5 +25,6 @@ export default class CatEvent extends RpgEvent {
         });
         await player.showText('Nice work! You completed a task!');
         player.exp += 1;
+        this.remove();
     }
 }

@@ -19,7 +19,7 @@ export default function topbar() {
       const taskSubscription = rpgCurrentPlayer.subscribe(({ object }) => {
         setCompletedTask(object.exp);
       });
-      
+
       return () => {
         imposterSubscription.unsubscribe();
         taskSubscription.unsubscribe();
@@ -31,11 +31,11 @@ export default function topbar() {
             {/* top nav */}
             <div className="flex flex-row justify-center items-center p-2">
                 <div className="ml-2 flex flex-col gap-2">
-                    <h1 className="font-bold text-xl text-white hover:animate-pulse">Imposter</h1>
-                    <h1 className="ml-6 font-bold text-xl text-white hover:animate-pulse">Invasion!</h1>
+                    <h1 className="font-bold text-xl text-white hover:animate-pulse">Imposter Invasion!</h1>
+                    {/* <h1 className="ml-6 font-bold text-xl text-white hover:animate-pulse">Invasion!</h1> */}
                 </div>
                 <button onClick={()=>setShowModal(true)} className="ml-auto hover:animate-pulse">
-                    <img src="public/images/menu-button.png" alt="Button Image" />
+                    <img width="40" height="40" src="public/images/menu-button.png" alt="Button Image" />
                 </button>
             </div>
 

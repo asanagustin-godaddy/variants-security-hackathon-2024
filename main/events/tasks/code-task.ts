@@ -18,5 +18,7 @@ export default class CatEvent extends RpgEvent {
         await player.showText('Could you review my code for any vulnerabilities?')
         const gui = player.gui('code')
         gui.open()
+        player.exp += 1;
+        this.remove();
     }
 }

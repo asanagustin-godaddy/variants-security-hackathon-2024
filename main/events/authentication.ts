@@ -1,7 +1,6 @@
 import { RpgEvent, EventData, RpgPlayer, ShapePositioning, RpgShape, Speed, Move, Components } from '@rpgjs/server'
-
 @EventData({
-    name: 'EV-1'
+    name: 'EV-0'
 })
 export default class CatEvent extends RpgEvent {
     onInit() {
@@ -21,10 +20,13 @@ export default class CatEvent extends RpgEvent {
        if(choice?.value === 'yes') {
             const gui = player.gui('result')
             gui.open({ title: 'Boo!', info: 'You cannot let people scan in like that' })
-       }else{
-           await player.showText('Oh, okay. *mumbles* Guess I will try to find another way in.')
+       } else {
+           player.gold += 1;
+           player.showText('Oh, okay. *mumbles* Guess I will try to find another way in.')
            const gui = player.gui('result')
            gui.open({ title: 'Yayy!', info: 'Smart Move!' })
        }
+        this.remove();
+
     }
 }
