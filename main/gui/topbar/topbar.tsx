@@ -14,7 +14,8 @@ export default function topbar({ foundImposters }) {
                 <div className="flex flex-row justify-between">
                     <h1 className="font-bold text-xl">Imposter Invasion</h1>
                     <div className="flex flex-row gap-8">
-                        <h1 className="font-medium text-lg">Imposters found: {foundImposters}/3</h1>
+                        <h1 className="text-red-500 font-medium text-lg">Imposters found: {foundImposters}/3</h1>
+                        <h1 className="text-blue-500 font-medium text-lg">Tasks completed: {foundImposters}/3</h1>
                         <button onClick={()=>setShowModal(true)} className="bg-black text-white rounded px-2 py-1">Open Map</button>
                     </div>
                 </div>
