@@ -20,6 +20,13 @@
             "width": 640,
             "x": 288,
             "y": 0
+        },
+        {
+            "fileName": "maps/cafe.tmx",
+            "height": 960,
+            "width": 640,
+            "x": 1568,
+            "y": 0
         }
     ],
     "onlyShowAdjacentMaps": false,
