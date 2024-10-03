@@ -13,20 +13,20 @@ interface Question {
 // should probably be moved as input?
 const questions: Question[] = [
     {
-        question: 'Q1) Is this a valid email?',
-        image: 'public/images/email-1.png',
-        options: ['Yes', 'No'],
+        question: 'Q1) Review the email and choose a response below.',
+        image: 'public/images/email1.png',
+        options: ['Send Iris the files through regular email.', 'Advise Iris that you will need to take a different approach to protect employee data'],
         correctAnswer: 1,
-        wrongExplanation: 'This is not a valid email because...',
-        correctExplanation: 'This is a valid email because...'
+        wrongExplanation: 'Try again!',
+        correctExplanation: 'Great work. Urgency is a common tactic used in phishing emails to pressure the recipient into acting quickly. Also, getting information from a personal computer is risky because they are often less secure than work computers.'
     },
     {
         question: 'Q2) Is this a valid email?',
-        image: 'public/images/email-1.png',
-        options: ['Yes', 'No'],
-        correctAnswer: 0,
-        wrongExplanation: 'This is not a valid email because...',
-        correctExplanation: 'This is a valid email because...'
+        image: 'public/images/email2.png',
+        options: ['Send the funds to the new bank account.', 'Send the email to isitbad@godaddy.com.'],
+        correctAnswer: 1,
+        wrongExplanation: 'Try again!',
+        correctExplanation: 'Nice catch. Always verify external ender’s email address and the content of the email before taking any action. If you have doubt, send it over to isitbad@godaddy.com!'
     },
 ];
 
@@ -72,16 +72,16 @@ export default function email() {
         }
         <div className="fixed inset-0 flex items-center justify-center z-50">
                 <div className="bg-white opacity-100 text-black p-6 rounded-lg"> 
-                    <div className="flex flex-col gap-2 max-w-96 justify-between">
+                    <div className="flex flex-col gap-2 max-w-3xl max-h-3xl justify-between">
                         <h1>{questions[currentQuestion].question}</h1>
                         <img src={questions[currentQuestion].image} alt="Question image" />
                         {showExplanation && <div className={isAnswerCorrect ? "text-green-700" : "text-red-700"}>{isAnswerCorrect ? questions[currentQuestion].correctExplanation : questions[currentQuestion].wrongExplanation}</div>}
-                        <div className="flex flex-col gap-2">
+                        {!isAnswerCorrect && <div className="flex flex-col gap-2">
                             {questions[currentQuestion].options.map((option, index) => (
-                                <button key={index} onClick={() => handleAnswer(index)} className="bg-teal-500 hover:opacity-90 text-white p-2 w-full rounded">{option}</button>
+                                <button disabled={isAnswerCorrect} key={index} onClick={() => handleAnswer(index)} className="disabled:bg-gray-400 bg-teal-500 hover:opacity-90 text-white p-2 w-full rounded">{option}</button>
                             ))}
-                        </div>
-                        {!completed && <button disabled={!isAnswerCorrect} onClick={handleNext} className="disabled:bg-gray-400 bg-gray-600 text-white p-2 w-full rounded ">Next</button>}
+                        </div>}
+                        {isAnswerCorrect && !completed && <button disabled={!isAnswerCorrect} onClick={handleNext} className="disabled:bg-gray-400 bg-gray-600 text-white p-2 w-full rounded ">Next</button>}
                         {completed && <button disabled={!isAnswerCorrect} onClick={() => rpgGuiClose('email')} className="disabled:bg-gray-400 bg-gray-600 text-white p-2 w-full rounded ">Close</button>}
                     </div>
                 </div>
