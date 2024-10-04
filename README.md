@@ -1,6 +1,6 @@
 # Imposter Invasion!
 
-Introducing **Imposter Invasion**, A gamified approach to training new GoDaddy employees on security principles and best practices.
+Introducing **Imposter Invasion**, a gamified approach to training new GoDaddy employees on security principles and best practices.
 
 Imposter Invasion is a web-based educational game that brings a new light to learning about physical and web security procedures we follow in our training.
 
